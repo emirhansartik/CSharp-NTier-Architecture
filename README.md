@@ -12,10 +12,12 @@ Proje, birbirine olan bağımlılığı (coupling) minimize edilmiş 4 temel kat
 *   🖥️ **`PresentationLayer` (Sunum Katmanı):** Kullanıcının sistemle etkileşime girdiği vitrindir (Windows Forms). Veritabanı ile asla doğrudan iletişim kurmaz; tüm veri taleplerini sıkı kurallarla örülmüş `BusinessLayer` üzerinden gerçekleştirir.
 
 ## 🚀 Teknoloji Yığını (Tech Stack)
+
 *   **Programlama Dili:** C# (.NET)
+*   **Mimari Yaklaşım:** N-Tier Architecture, Nesne Yönelimli Programlama (OOP)
+*   **ORM (Object-Relational Mapping):** Entity Framework (Code First Yaklaşımı)
 *   **Veritabanı:** MS SQL Server
 *   **Arayüz:** Windows Forms (WinForms)
-*   **Mimari Yaklaşım:** N-Tier Architecture, Nesne Yönelimli Programlama (OOP)
 
 ---
 *Bu proje, modern ve ölçeklenebilir backend sistemleri geliştirme sürecimin aktif bir parçasıdır.*
