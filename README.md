@@ -15,7 +15,7 @@ Proje, birbirine olan bağımlılığı (coupling) minimize edilmiş 4 temel kat
 
 *   **Programlama Dili:** C# (.NET)
 *   **Mimari Yaklaşım:** N-Tier Architecture, Nesne Yönelimli Programlama (OOP)
-*   **ORM (Object-Relational Mapping):** Entity Framework (Code First Yaklaşımı)
+*   **ORM (Object-Relational Mapping):** Entity Framework (Code First & Database First Yaklaşımları)
 *   **Veritabanı:** MS SQL Server
 *   **Arayüz:** Windows Forms (WinForms)
 
