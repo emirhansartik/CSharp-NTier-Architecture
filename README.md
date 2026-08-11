@@ -15,7 +15,7 @@ Proje, birbirine olan bağımlılığı (coupling) minimize edilmiş 4 temel kat
 
 Sistemin arka planında çalışan mimarinin gücünü test etmek ve veri işleme yeteneklerini sergilemek amacıyla projeye bir **İstatistik Dashboard** modülü entegre edilmiştir.
 
-![Statistics Dashboard](Ekrangörüntüsü2026-08-11163624.png)
+![Statistics Dashboard](Ekran görüntüsü 2026-08-11 163624.png)
 
 Bu panelin altyapısında kullanılan temel teknik yaklaşımlar:
 *   **LINQ (Language Integrated Query):** SQL Server'a karmaşık metin sorguları yazmak yerine, veri çekme operasyonları doğrudan C# nesneleri üzerinden yüksek performansla gerçekleştirilmiştir.
