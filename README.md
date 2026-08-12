@@ -11,6 +11,13 @@ Proje, birbirine olan bağımlılığı (coupling) minimize edilmiş 4 temel kat
 *   🧠 **`BusinessLayer` (İş Katmanı):** Projenin karar mekanizmasıdır. `PresentationLayer`'dan gelen verilerin; veritabanına gönderilmeden önce sistem kurallarına (Business Rules), doğrulama (Validation) ve güvenlik şartlarına uyup uymadığını denetler.
 *   🖥️ **`PresentationLayer` (Sunum Katmanı):** Kullanıcının sistemle etkileşime girdiği vitrindir (Windows Forms). Veritabanı ile asla doğrudan iletişim kurmaz; tüm veri taleplerini sıkı kurallarla örülmüş `BusinessLayer` üzerinden gerçekleştirir.
 
+## 🧠 Business Katmanı (İş Kuralları) Entegrasyonu
+
+Projenin veri akışını yönetmek ve güvenliğini sağlamak amacıyla `BusinessLayer` içerisinde modern yazılım prensipleri uygulanmıştır:
+*   **Generic Service Tasarımı:** Kod tekrarını (WET) önlemek ve sürdürülebilirliği sağlamak için tüm temel CRUD operasyonları soyutlanarak Interface (`IGenericService`) yapıları üzerinden kurgulanmıştır.
+*   **Manager Sınıfları:** Sunum katmanından gelen talepler doğrudan veritabanına iletilmez; ilgili varlığın *Manager* sınıflarında iş kuralları ve validasyon süzgecinden geçirilir.
+*   **Bağımlılıkların Yönetimi:** İş katmanı, veri erişim katmanına doğrudan değil, Interface'ler aracılığıyla (Dependency Inversion prensibine uygun olarak) bağlanır.
+
 ## 📊 Veri Analizi ve İstatistik Paneli (Case Study)
 
 Sistemin arka planında çalışan mimarinin gücünü test etmek ve veri işleme yeteneklerini sergilemek amacıyla projeye bir **İstatistik Dashboard** modülü entegre edilmiştir.
