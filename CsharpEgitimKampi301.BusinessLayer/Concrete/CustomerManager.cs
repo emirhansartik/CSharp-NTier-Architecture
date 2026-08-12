@@ -12,13 +12,13 @@ namespace CsharpEgitimKampi301.BusinessLayer.Concrete
     public class CustomerManager : ICustomerService
     {
         private readonly ICustomerDal _customerDal;
-
+        
         public CustomerManager(ICustomerDal customerDal)
         {
             _customerDal = customerDal;
         }
 
-        public void TDelete(Customer entity)
+        public void TDelete(Customer entity)        
         {
            _customerDal.Delete(entity);
         }

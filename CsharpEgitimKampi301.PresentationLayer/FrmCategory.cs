@@ -16,5 +16,10 @@ namespace CsharpEgitimKampi301.PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
