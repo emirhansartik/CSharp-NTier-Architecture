@@ -13,10 +13,12 @@ Proje, birbirine olan bağımlılığı (coupling) minimize edilmiş 4 temel kat
 
 ## 🧠 Business Katmanı (İş Kuralları) Entegrasyonu
 
-Projenin veri akışını yönetmek ve güvenliğini sağlamak amacıyla `BusinessLayer` içerisinde modern yazılım prensipleri uygulanmıştır:
-*   **Generic Service Tasarımı:** Kod tekrarını (WET) önlemek ve sürdürülebilirliği sağlamak için tüm temel CRUD operasyonları soyutlanarak Interface (`IGenericService`) yapıları üzerinden kurgulanmıştır.
-*   **Manager Sınıfları:** Sunum katmanından gelen talepler doğrudan veritabanına iletilmez; ilgili varlığın *Manager* sınıflarında iş kuralları ve validasyon süzgecinden geçirilir.
-*   **Bağımlılıkların Yönetimi:** İş katmanı, veri erişim katmanına doğrudan değil, Interface'ler aracılığıyla (Dependency Inversion prensibine uygun olarak) bağlanır.
+Projenin veri akışını yönetmek ve esnekliğini sağlamak amacıyla `BusinessLayer` içerisinde modern yazılım prensipleri uygulanmıştır:
+
+*   **Generic Service Tasarımı:** Kod tekrarını (WET) önlemek için tüm temel CRUD operasyonları soyutlanarak Interface (`IGenericService`) yapıları üzerinden kurgulanmıştır.
+*   **Özel İş Kuralları (Custom Entity Methods):** Standart operasyonların yetersiz kaldığı senaryolarda, sadece ilgili varlığa (Entity) özgü spesifik LINQ sorguları ve veri filtreleme işlemleri tanımlanarak mimarinin yetenekleri genişletilmiştir.
+*   **Manager Sınıfları:** Sunum katmanından gelen talepler doğrudan veritabanına iletilmez; ilgili varlığın *Manager* sınıflarında iş kuralları süzgecinden geçirilir.
+*   **Dependency Injection (Bağımlılık Enjeksiyonu):** Sınıflar arası sıkı bağlılığı (Tightly Coupled) ortadan kaldırmak için, veri erişim nesneleri `new` anahtar kelimesiyle koda gömülmek yerine Constructor (Yapıcı Metot) üzerinden sisteme enjekte edilmiştir. Bu sayede modüller arası "Tak-Çıkar (Plug & Play)" esnekliği sağlanmıştır.
 
 ## 📊 Veri Analizi ve İstatistik Paneli (Case Study)
 
