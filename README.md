@@ -1,5 +1,7 @@
 # 🏗️ C# N-Tier Enterprise Architecture
 
+> 📌 **Proje Durumu:** Tamamlandı (Completed) | **Ana Odak:** Entity Framework & N-Tier Architecture
+
 Bu depo, kurumsal yazılım geliştirme standartlarına uygun olarak inşa edilmiş **N-Katmanlı Mimari (N-Tier Architecture)** altyapısını içermektedir. Monolitik (tek parça) kod yığınları yerine; sürdürülebilir, güvenli ve takım çalışmasına uygun bir backend ekosistemi kurmak amacıyla "Separation of Concerns" (Sorumlulukların Ayrılığı) prensibi merkeze alınmıştır.
 
 ## ⚙️ Mimari Katmanlar (Layers)
@@ -41,4 +43,4 @@ Bu panelin altyapısında kullanılan temel teknik yaklaşımlar:
 *   **Arayüz:** Windows Forms (WinForms)
 
 ---
-*Bu proje, modern ve ölçeklenebilir backend sistemleri geliştirme sürecimin aktif bir parçasıdır.*
+*Bu proje, modern backend sistemleri geliştirme sürecimin ve N-Katmanlı mimari prensiplerine hakimiyetimin aktif bir göstergesidir.*
